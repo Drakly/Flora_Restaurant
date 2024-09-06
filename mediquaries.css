@@ -1,0 +1,75 @@
+/* Base styles for the hamburger menu */
+#hamburger-nav {
+    display: none; /* Hidden by default */
+}
+
+/* Hamburger menu styles for mobile view */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none; /* Hide desktop navigation */
+    }
+
+    #hamburger-nav {
+        display: flex; /* Show hamburger menu */
+        flex-direction: column;
+        position: relative;
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 1rem;
+        background-color: transparent; /* Remove the white background */
+        border: none; /* Remove border if added */
+    }
+
+    .hamburger-icon span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #000; /* Adjust color as needed */
+        margin: 5px 0;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .menu-links {
+        display: none; /* Hide menu links by default */
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff; /* Background color for the menu */
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        width: 100%;
+        max-height: 80vh; /* Limit menu height */
+        overflow-y: auto; /* Enable scrolling if content exceeds height */
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add shadow for better visibility */
+        z-index: 999; /* Ensure it's above other content */
+        border-radius: 5px; /* Optional: rounded corners */
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .menu-links.active {
+        display: flex; /* Show menu links when active */
+        max-height: 80vh; /* Ensure menu height is limited when open */
+    }
+
+    .menu-links li {
+        margin: 0.5rem 0; /* Space between menu items */
+    }
+
+    .menu-links a {
+        text-decoration: none;
+        color: #000; /* Adjust text color as needed */
+        font-weight: bold
+    }
+}

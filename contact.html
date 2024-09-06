@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediquaries.css">
+
+    <title>Flora - Contact Us</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">FLORA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">FLORA</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <h1><img src="assets/leaf-icon.png" alt="Leaf Icon" style="width: 70px;">Свържи се с нас:</h1>
+        <div class="contact-details">
+            <p>Тел: +359 888228896</p>
+            <p>Email: flora.kostinbrod@gmail.com</p>
+            <p>Адрес: ул.Охрид №9, Костинброд</p>
+        </div>
+
+        <form action="https://formspree.io/f/xvgpywae" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Изпрати съобщение</button>
+        </form>
+        
+        
+    </div>
+
+     <script src="scripts.js"></script>
+</body>
+</html>

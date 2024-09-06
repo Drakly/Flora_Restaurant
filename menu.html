@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediquaries.css">
+
+    <title>Flora - Menu</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">FLORA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">FLORA</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-container">
+        <h1><img src="assets/leaf-icon.png" alt="Leaf Icon" style="width: 70px;">Нашето Меню</h1>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="assets/Flora-brunch.jpg" alt="Menu 1" class="menu-img">
+                <h2>Brunch Special</h2>
+                <p>A delightful blend of fresh ingredients.</p>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Flora-menu-1.png" alt="Menu 2" class="menu-img">
+                <h2>Салати</h2>
+                
+            </div>
+            <div class="menu-item">
+                <img src="assets/Flora-menu-2.png" alt="Menu 3" class="menu-img">
+                <h2>Разядки/Брускети</h2>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Flora-menu-3.png" alt="Menu 3" class="menu-img">
+                <h2>Предястия</h2>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Flora-menu-4.png" alt="Menu 3" class="menu-img">
+                <h2>Паста/Ризото</h2>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Flora-menu-6.png" alt="Menu 3" class="menu-img">
+                <h2>Основни Ястия</h2>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Flora-menu-7.png" alt="Menu 3" class="menu-img">
+                <h2>Риба и Морски/Десерт</h2>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Flora-menu-8.png" alt="Menu 3" class="menu-img">
+                <h2>Напитки</h2>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Flora-menu-9.png" alt="Menu 3" class="menu-img">
+                <h2>Бира и Алкохолни Напитки</h2>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Flora-menu-10.png" alt="Menu 3" class="menu-img">
+                <h2>Джин/Уиски/Аператив</h2>
+            </div>
+            
+        </div>
+    </div>
+
+      <!-- Modal for image lightbox with slider -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+        <div id="caption"></div>
+        <!-- Left and right navigation controls -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

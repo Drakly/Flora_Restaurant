@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediquaries.css">
+    <title>Flora - Home</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">FLORA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo">FLORA</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+      
+    <!-- Hero Section -->
+     <section id="hero">
+        <div class="hero-content">
+            <h1>Заповядайте в Ресторант FLORA</h1>
+            <p>Където всяко ястие е наслада!</p>
+            <p>Телефон за резервации: 0888228896</p>
+            <p>Адрес: ул.Охрид №9, Костинброд</p>
+            <a href="menu.html" class="cta-button">Виж нашето меню</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2><img src="assets/leaf-icon.png" alt="Leaf Icon" style="width: 70px;"> За нас:</h2>
+        <p>Ресторант Flora е място, където храната, атмосферата и гостоприемството се обединяват, за да предложат прекрасно изживяване при хранене. Нашите сезонни менюта са подготвени с любов и внимание, което гарантира, че всяко хранене е специално.
+        </p>
+    </section>
+    
+
+    <!-- Call to Action Links -->
+    <section id="call-to-actions">
+        <div class="cta-box">
+            <h3><img src="assets/leaf-icon.png" alt="Leaf Icon" style="width: 30px;">Виж нашето меню</h3>
+            <a href="menu.html" class="cta-button">Menu</a>
+        </div>
+        <div class="cta-box">
+            <h3><img src="assets/leaf-icon.png" alt="Leaf Icon" style="width: 30px;">See Our Gallery</h3>
+            <a href="gallery.html" class="cta-button">Gallery</a>
+        </div>
+        <div class="cta-box">
+            <h3><img src="assets/leaf-icon.png" alt="Leaf Icon" style="width: 30px;">Свържи се с нас</h3>
+            <a href="contact.html" class="cta-button">Contact</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Flora Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

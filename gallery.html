@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediquaries.css">
+
+    <title>Flora - Gallery</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">FLORA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">FLORA</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="gallery-container">
+        <h1><img src="assets/leaf-icon.png" alt="Leaf Icon" style="width: 70px;">Галерия</h1>
+        <div class="gallery-grid">
+            <img src="assets/Flora-inside.jpg" alt="Gallery Image 1" class="gallery-img">
+            <img src="assets/food-1.jpg" alt="Gallery Image 2" class="gallery-img">
+            <img src="assets/food-2.jpg" alt="Gallery Image 3" class="gallery-img">
+            <img src="assets/food-3.jpg" alt="Gallery Image 4" class="gallery-img">
+            <img src="assets/food-4.jpg" alt="Gallery Image 5" class="gallery-img">
+            <img src="assets/food-5.jpg" alt="Gallery Image 6" class="gallery-img">
+            <img src="assets/drink-1.jpg" alt="Gallery Image 7" class="gallery-img">
+            <img src="assets/drink-2.jpg" alt="Gallery Image 8" class="gallery-img">
+            <img src="assets/drink-3.jpg" alt="Gallery Image 9" class="gallery-img">
+            <img src="assets/food-6.jpg" alt="Gallery Image 10" class="gallery-img">
+            <img src="assets/food-7.jpg" alt="Gallery Image 11" class="gallery-img">
+            <img src="assets/food-8.jpg" alt="Gallery Image 12" class="gallery-img">
+            <img src="assets/food-9.jpg" alt="Gallery Image 13" class="gallery-img">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+    <!-- Modal for image lightbox with slider -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+        <div id="caption"></div>
+        <!-- Left and right navigation controls -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
